@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.di-page {
+    background: #f9f7f4;
+    color: #1a1a1a;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+    min-height: 100vh;
+}
+
+
+.hero {
+    position: relative;
+    height: 80vh;
+    min-height: 520px;
+    background: #0f0f0f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-images {
+    position: absolute;
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.image-overlay {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 1.1rem;
+    font-family: system-ui, sans-serif;
+}
+
+.large {
+    width: 380px;
+    height: 520px;
+    top: 12%;
+    left: 7%;
+    transform: rotate(-3.5deg);
+}
+
+.medium {
+    width: 300px;
+    height: 400px;
+    top: 38%;
+    right: 9%;
+    transform: rotate(5deg);
+}
+
+.small {
+    width: 240px;
+    height: 340px;
+    bottom: 10%;
+    left: 48%;
+    transform: rotate(-7deg);
+}
+
+.hero-content {
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 8.5rem;
+    line-height: 0.88;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 0.4rem;
+}
+
+.position {
+    font-size: 2.6rem;
+    opacity: 0.92;
+    margin: 1rem 0 0.6rem;
+    letter-spacing: 1px;
+}
+
+.year {
+    font-size: 1.1rem;
+    letter-spacing: 6px;
+    opacity: 0.65;
+    text-transform: uppercase;
+}
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 30px 120px;
+}
+
+.section {
+    margin-bottom: 140px;
+}
+
+.section-title {
+    font-size: 4.8rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.cursive {
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+}
+
+.lead {
+    font-size: 1.55rem;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto 2.4rem;
+    line-height: 1.7;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.column h3 {
+    font-size: 1.9rem;
+    margin-bottom: 1.4rem;
+    font-weight: 500;
+}
+
+.column ul {
+    list-style: none;
+    font-size: 1.22rem;
+}
+
+.column li {
+    margin-bottom: 0.9rem;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px 30px;
+    text-align: center;
+}
+
+.skill-name {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.skill-desc {
+    font-size: 1rem;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+.signature {
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 60px;
+}
+
+.signature-name {
+    font-family: 'Great Vibes', cursive;
+    font-size: 6.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.signature-year {
+    font-size: 1.15rem;
+    letter-spacing: 5px;
+    opacity: 0.6;
+    text-transform: uppercase;
+}
+
+.hero-portrait {
+    opacity: 0.5;
+
+    filter: grayscale(100%) contrast(1.1) brightness(0.85);
+
+
+    height: auto;
+
+    max-width: 100%;
+
+    display: block;
+    object-fit: cover;
+}
+
+
+
+.projects {
+    margin-bottom: 140px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px 40px;
+}
+
+
+
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 24px;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.project-title {
+    font-size: 2.1rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.project-desc {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.project-tech {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.project-links {
+    display: flex;
+    gap: 24px;
+}
+
+.project-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
