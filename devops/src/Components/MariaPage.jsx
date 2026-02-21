@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function MariaPage() {
     return (
-        <div>Maria Page</div>
+        <div className='text-center'>Maria Page</div>
     )
 }

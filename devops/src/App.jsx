@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Главная() {
+export default function App() {
   return (
-    <div>Главная</div>
+    <div>App</div>
   )
 }
